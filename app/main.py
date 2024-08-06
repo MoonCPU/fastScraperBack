@@ -1,7 +1,7 @@
 from fastapi import FastAPI, HTTPException
 from fastapi.responses import JSONResponse
-from .indicators import scrape_indicators
-from .netGrowth import scrape_netGrowth
+from app.indicators import scrape_indicators
+from app.netGrowth import scrape_netGrowth
 
 app = FastAPI()
 

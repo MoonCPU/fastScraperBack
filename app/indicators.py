@@ -15,8 +15,6 @@ def scrape_indicators(stock_code):
     response = requests.get(url, headers=headers)
     soup = BeautifulSoup(response.text, 'html.parser')
     
-    print(soup)
-    
     stock_data = {}
     
     card_body = soup.find('div', class_='_card-body')
@@ -46,6 +44,3 @@ def scrape_indicators(stock_code):
                 stock_data[indicator_name] = indicator_value
     
     return stock_data
-
-# stock_code = "kepl3"
-# data = scrape_indicators(stock_code)
