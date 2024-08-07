@@ -1,4 +1,7 @@
 from fastapi import FastAPI, HTTPException
+from dotenv import load_dotenv
+import os
+load_dotenv()
 from fastapi.responses import JSONResponse
 from app.indicators import scrape_indicators
 from app.netGrowth import scrape_netGrowth
