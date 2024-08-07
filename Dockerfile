@@ -10,6 +10,6 @@ EXPOSE 8000
 
 ENV PYTHONUNBUFFERED=1
 
-COPY app/.env /app/.env
+COPY .env .env
 
 CMD ["uvicorn", "app.main:app", "--reload", "--host", "0.0.0.0", "--port", "8000"]
