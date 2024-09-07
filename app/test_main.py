@@ -4,7 +4,7 @@ from app.main import app
 client = TestClient(app)
 
 def test_scrape_indicators_endpoint():
-    stock_code = "cmig4"  
+    stock_code = "cmig4"
     response = client.get(f"/scrape/indicators/{stock_code}")
     
     assert response.status_code == 200
