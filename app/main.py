@@ -28,8 +28,7 @@ async def scrape_indicators_endpoint(stock_code: str):
         raise HTTPException(status_code=400, detail="stock_code is required")
 
     try:
-        # Call the asynchronous scraping function
-        indicators_data = await scrape_indicators(stock_code)
+        indicators_data = scrape_indicators(stock_code)
 
         response_data = {
             "indicators": indicators_data,
@@ -46,8 +45,7 @@ async def scrape_netGrowth_endpoint(stock_code: str):
         raise HTTPException(status_code=400, detail="stock_code is required")
 
     try:
-        # Call the asynchronous scraping function
-        net_growth_data = await scrape_netGrowth(stock_code)
+        net_growth_data = scrape_netGrowth(stock_code)
         
         response_data = {
             "net_growth": net_growth_data
