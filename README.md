@@ -38,15 +38,6 @@ Please be aware that since the API fetches data from external sources, there may
 
 When using the API, ensure you use a valid Brazilian stock code. Examples of valid stock codes include `cmig4`, `kepl3`, `petr4`, etc. Using incorrect or non-existent stock codes will result in errors or empty responses.
 
-  
-## Deployment Process
-
-1. CI/CD Pipeline: Set up with GitHub Actions to automate testing, building, and deployment.
-2. Docker: Build a Docker image upon successful tests and push to Docker Hub.
-3. AWS Lambda: Deploy the Dockerized application as a Lambda function.
-4. API Gateway: Configure API Gateway to expose the Lambda function via HTTP endpoints.
-5. Route 53: Register a domain and set up DNS routing to the API Gateway.
-
 
 ## Future Enhancements
 
