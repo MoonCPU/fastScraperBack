@@ -5,7 +5,7 @@ client = TestClient(app)
 
 def test_scrape_indicators_endpoint():
     stock_code = "cmig4"  
-    response = client.post(f"/scrape/indicators/{stock_code}")
+    response = client.get(f"/scrape/indicators/{stock_code}")
     
     assert response.status_code == 200
     
@@ -34,7 +34,7 @@ def test_scrape_indicators_endpoint():
 
 def test_scrape_netGrowth_endpoint():
     stock_code = "cmig4"
-    response = client.post(f"/scrape/netGrowth/{stock_code}")
+    response = client.get(f"/scrape/netGrowth/{stock_code}")
     
     assert response.status_code == 200
     
