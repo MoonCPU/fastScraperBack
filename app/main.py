@@ -2,7 +2,7 @@ from fastapi import FastAPI, HTTPException
 from dotenv import load_dotenv
 import os
 from fastapi.responses import JSONResponse
-from fastapi.middleware.cors import CORSMiddleware  # Import CORSMiddleware
+from fastapi.middleware.cors import CORSMiddleware 
 from app.indicators import scrape_indicators
 from app.netGrowth import scrape_netGrowth
 from mangum import Mangum
