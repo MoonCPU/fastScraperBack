@@ -34,7 +34,7 @@ Access the application using the following endpoints:
 
 **Important Note**: 
 
-Please be aware that since the API fetches data from external sources, there may be a delay of up to 3 seconds before data is returned. This delay is due to the time required to retrieve and process the data from the source.
+Please be aware that since the API fetches data from external sources, there may be a delay of up to 3 seconds before data is returned. This delay is due to the time required to retrieve and process the data from the source. I'm working on optimizing this app.
 
 When using the API, ensure you use a valid Brazilian stock code. Examples of valid stock codes include `cmig4`, `kepl3`, `petr4`, etc. Using incorrect or non-existent stock codes will result in errors or empty responses.
 
