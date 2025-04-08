@@ -13,6 +13,6 @@ sudo apt-get update -y
 
 sudo apt-get install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 
-sudo docker pull moon20/fast-api-ec2:v1
+sudo docker pull moon20/fast-api-ec2:latest
 
-sudo docker run -d -p 8000:8000 moon20/fast-api-ec2:v1
+sudo docker run -d -p 8000:8000 moon20/fast-api-ec2:latest

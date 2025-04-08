@@ -11,3 +11,5 @@ terraform.tfstate.backup
 terraform.tfvars
 .terraform.tfstate.lock.info
 .terraform
+backend
+backend.hcl
