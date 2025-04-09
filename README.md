@@ -16,12 +16,9 @@ This project is a web scraping application designed to extract financial indicat
     - Builds and pushes the Docker image to Docker Hub
     - Provisions AWS infrastructure with Terraform
  
-## Deployment Flow
-- Push to main branch triggers GitHub Actions:
-    - Docker image is built and pushed to Docker Hub.
-    - Terraform provisions the AWS infrastructure.
-    - The latest Docker image is pulled and run.
-- EC2 costs are minimized by destroying the infrastructure when not in use. The same CI/CD flow recreates everything from scratch as needed.
+## Architecture
+
+![fast](https://github.com/user-attachments/assets/95fd1b44-fa29-4e27-b37f-eda01316ac03)
 
 
 ## API Endpoints
