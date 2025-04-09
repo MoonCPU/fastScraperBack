@@ -18,7 +18,8 @@ This project is a web scraping application designed to extract financial indicat
  
 ## Architecture
 
-![fast](https://github.com/user-attachments/assets/95fd1b44-fa29-4e27-b37f-eda01316ac03)
+![fast_diagram](https://github.com/user-attachments/assets/36d7eb55-cd25-4e3d-a610-b3748e5f5856)
+
 
 
 ## API Endpoints
