@@ -127,7 +127,7 @@ resource "aws_instance" "app_server" {
   user_data = file("${path.module}/setup.sh")
 }
 
-// 2 - set up cloudfront
+// 3 - set up cloudfront
 
 resource "aws_cloudfront_distribution" "api_distribution" {
 
